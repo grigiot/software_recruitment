@@ -3,7 +3,10 @@ from rclpy.node import Node
 from std_msgs.msg import Float32
 
 # Define the TemperatureLogger node
-
+class TemperatureLogger(Node):
+    def __init__(self):
+        super().__init__('temperature_logger')
+        # self.
 
 def main(args=None):
     rclpy.init(args=args)
